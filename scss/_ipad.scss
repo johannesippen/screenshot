@@ -1,0 +1,26 @@
+/* iPad */
+.screenshot.ipad {
+  border-width: $ipad-outer;
+  border-radius: $ipad-border-radius;
+  padding: $border-width;
+  img {
+    width: $ipad-width;
+    height: $ipad-height;
+  }
+  &::before {
+    width: $border-width;
+    height: $border-width;
+    border-radius: 100%;
+    margin: -28px 0 0 141px;
+  }
+  &::after {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin: 13px 0 0 130px;
+  }
+  &.outline {
+    padding: $ipad-outer;
+    border-width: $border-width;
+  }
+}

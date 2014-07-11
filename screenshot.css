@@ -1,0 +1,159 @@
+/* Preferably Page Background */
+/* General */
+.screenshot {
+  display: inline-block;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  text-align: left;
+  font-family: sans-serif; }
+  .screenshot img {
+    display: block; }
+  .screenshot::before, .screenshot::after {
+    content: " ";
+    color: #eeeeee;
+    border: 2px solid;
+    position: absolute; }
+  .screenshot.outline::before, .screenshot.outline::after {
+    color: rgba(0, 0, 0, 0.2); }
+
+/* iPhone */
+.screenshot.iphone {
+  border-width: 67px 14px 64px;
+  padding: 2px;
+  border-radius: 36px; }
+  .screenshot.iphone img {
+    width: 196px;
+    height: 348px; }
+  .screenshot.iphone::before {
+    content: "\2022";
+    font: bold 40px/4px sans-serif;
+    text-indent: -20px;
+    width: 36px;
+    height: 3px;
+    border-radius: 5px;
+    margin: -32px 0 0 78px;
+    box-shadow: 58px -43px 0 -3px rgba(0, 0, 0, 0.2); }
+  .screenshot.iphone::after {
+    width: 38px;
+    height: 38px;
+    border-radius: 100%;
+    margin: 8px 0 0 76px; }
+  .screenshot.iphone.outline {
+    padding: 67px 14px 64px;
+    border-width: 2px; }
+
+/* Nexus */
+.screenshot.nexus {
+  border-width: 41px 9px 56px;
+  padding: 2px;
+  border-top-left-radius: 120px 25px;
+  border-top-right-radius: 120px 25px;
+  border-bottom-left-radius: 120px 25px;
+  border-bottom-right-radius: 120px 25px; }
+  .screenshot.nexus img {
+    width: 243px;
+    height: 431px; }
+  .screenshot.nexus::before {
+    width: 8px;
+    height: 8px;
+    border-radius: 9px;
+    margin: -26px 0 0 114px;
+    box-shadow: -88px 1px 0 -3px #eeeeee; }
+  .screenshot.nexus::after {
+    height: 85px;
+    width: 3px;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    margin: -369px 0 0 -14px; }
+  .screenshot.nexus.outline {
+    padding: 41px 9px 56px;
+    border-width: 2px; }
+    .screenshot.nexus.outline::before {
+      box-shadow: -88px 1px 0 -3px rgba(0, 0, 0, 0.2); }
+
+/* iPad */
+.screenshot.ipad {
+  border-width: 51px 19px 52px;
+  border-radius: 24px;
+  padding: 2px; }
+  .screenshot.ipad img {
+    width: 291px;
+    height: 388px; }
+  .screenshot.ipad::before {
+    width: 2px;
+    height: 2px;
+    border-radius: 100%;
+    margin: -28px 0 0 141px; }
+  .screenshot.ipad::after {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin: 13px 0 0 130px; }
+  .screenshot.ipad.outline {
+    padding: 51px 19px 52px;
+    border-width: 2px; }
+
+/* Notebook */
+.screenshot.notebook {
+  border-width: 23px 17px 2px;
+  border-radius: 21px 21px 0 0;
+  padding: 2px;
+  margin-left: 70px;
+  margin-bottom: 20px; }
+  .screenshot.notebook img {
+    width: 564px;
+    height: 325px; }
+  .screenshot.notebook::before {
+    width: 4px;
+    height: 4px;
+    border-width: 0;
+    background: #eeeeee;
+    border-radius: 100%;
+    margin: -15px 0 0 280px; }
+  .screenshot.notebook::after {
+    width: 740px;
+    height: 26px;
+    margin: 4px 0 0 -90px;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 70px 10px;
+    border-bottom-right-radius: 70px 10px; }
+  .screenshot.notebook.outline {
+    padding: 23px 17px 2px;
+    border-radius: 21px 21px 0 0;
+    border-width: 2px;
+    border-bottom-width: 0; }
+    .screenshot.notebook.outline::before {
+      background: rgba(0, 0, 0, 0.2); }
+    .screenshot.notebook.outline::after {
+      border-color: rgba(0, 0, 0, 0.2);
+      border-width: 2px;
+      height: 26px;
+      margin: 2px 0 0 -90px;
+      background: none; }
+
+/* Browser */
+.screenshot.browser {
+  border-width: 50px 3px 3px;
+  border-radius: 6px 6px 0 0;
+  padding: 2px; }
+  .screenshot.browser img {
+    width: 640px;
+    height: 360px; }
+  .screenshot.browser::before {
+    content: attr(title);
+    font: normal 13px/20px sans-serif;
+    padding: 3px 10px;
+    width: 500px;
+    color: rgba(0, 0, 0, 0.2);
+    background: #eeeeee;
+    position: absolute;
+    margin: -40px 0 0 100px; }
+  .screenshot.browser::after {
+    content: '\2022\2022\2022';
+    font-size: 70px;
+    line-height: 18px;
+    border: none;
+    margin: -392px 0 0 10px; }
+  .screenshot.browser.outline {
+    padding: 50px 3px 3px;
+    border-width: 2px; }

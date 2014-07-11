@@ -1,0 +1,31 @@
+/* Browser */
+.screenshot.browser {
+  border-width: $browser-outer;
+  border-radius: $browser-border-radius;
+  padding: $border-width;
+  img {
+    width: $browser-width;
+    height: $browser-height;
+  }
+  &::before {
+    content: attr(title);
+    font: normal 13px/20px sans-serif;
+    padding: 3px 10px;
+    width: $browser-width - 140px;
+    color: $primary-color;
+    background: $background-color;
+    position: absolute;
+    margin: -40px 0 0 100px;
+  }
+  &::after {
+    content: '\2022\2022\2022';
+    font-size: 70px;
+    line-height: 18px;
+    border: none;
+    margin: -392px 0 0 10px;
+  }
+  &.outline {
+    padding: $browser-outer;
+    border-width: $border-width;
+  }
+}

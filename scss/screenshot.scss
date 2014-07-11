@@ -1,0 +1,60 @@
+$primary-color: rgba(0,0,0,.2);
+$background-color: #eee; /* Preferably Page Background */
+$font: sans-serif;
+$border-width: 2px;
+
+$iphone-width: 196px;
+$iphone-height: 348px;
+$iphone-outer: 67px 14px 64px;
+$iphone-border-radius: 36px;
+
+$nexus-width: 243px;
+$nexus-height: 431px;
+$nexus-outer: 41px 9px 56px;
+$nexus-border-radius: 120px 25px;
+
+$ipad-width: 291px;
+$ipad-height: 388px;
+$ipad-outer: 51px 19px 52px;
+$ipad-border-radius: 24px;
+
+$notebook-width: 564px;
+$notebook-height: 325px;
+$notebook-outer: 23px 17px $border-width;
+$notebook-border-radius: 21px 21px 0 0;
+
+$browser-width: 640px;
+$browser-height: 360px;
+$browser-outer: 50px 3px 3px;
+$browser-border-radius: 6px 6px 0 0;
+
+/* General */
+.screenshot {
+  display: inline-block;
+  border-color: $primary-color;
+  border-style: solid;
+  text-align: left;
+  font-family: $font;
+  img {
+    display: block;
+  }
+  &::before,
+  &::after {
+    content: " ";
+    color: $background-color;
+    border: $border-width solid;
+    position: absolute;
+  }
+  &.outline {
+    &::before,
+    &::after {
+      color: $primary-color;
+    }
+  }
+}
+
+@import 'iphone';
+@import 'nexus';
+@import 'ipad';
+@import 'notebook';
+@import 'browser';

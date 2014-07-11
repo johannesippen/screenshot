@@ -1,0 +1,30 @@
+/* iPhone */
+.screenshot.iphone{
+  border-width: $iphone-outer;
+  padding: $border-width;
+  border-radius: $iphone-border-radius;
+  img {
+    width: $iphone-width;
+    height: $iphone-height;
+  }
+  &::before {
+    content: "\2022";
+    font: bold 40px/4px sans-serif;
+    text-indent: -20px;
+    width: $iphone-border-radius;
+    height: 3px;
+    border-radius: $border-width+3px;
+    margin: -32px 0 0 78px;
+    box-shadow: 58px -43px 0 -3px $primary-color;
+  }
+  &::after {
+    width: $iphone-border-radius+2;
+    height: $iphone-border-radius+2;
+    border-radius: 100%;
+    margin: 8px 0 0 76px;
+  }
+  &.outline{
+    padding: $iphone-outer;
+    border-width: $border-width;
+  }
+}

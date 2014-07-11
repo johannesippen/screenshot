@@ -1,0 +1,44 @@
+/* Notebook */
+.screenshot.notebook {
+  border-width: $notebook-outer;
+  border-radius: $notebook-border-radius;
+  padding: $border-width;
+  margin-left: 70px;
+  margin-bottom: 20px;
+  img {
+    width: $notebook-width;
+    height: $notebook-height;
+  }
+  &::before {
+    width: 4px;
+    height: 4px;
+    border-width: 0;
+    background: $background-color;
+    border-radius: 100%;
+    margin: -15px 0 0 280px;
+  }
+  &::after {
+    width: $notebook-width + (90px - $border-width)  * 2;
+    height: 26px;
+    margin: $border-width*2 0 0 -90px;
+    background: $primary-color;
+    border-bottom-left-radius: 70px 10px;
+    border-bottom-right-radius: 70px 10px;
+  }
+  &.outline {
+    padding: $notebook-outer;
+    border-radius: $notebook-border-radius;
+    border-width: $border-width;
+    border-bottom-width: 0;
+    &::before {
+      background: $primary-color;
+    }
+    &::after {
+      border-color: $primary-color;
+      border-width: $border-width;
+      height: 26px;
+      margin: $border-width 0 0 -90px;
+      background: none;
+    }
+  }
+}

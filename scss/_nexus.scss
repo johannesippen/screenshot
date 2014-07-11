@@ -1,0 +1,34 @@
+/* Nexus */
+.screenshot.nexus {
+  border-width: $nexus-outer;
+  padding: $border-width;
+  border-top-left-radius: $nexus-border-radius;
+  border-top-right-radius: $nexus-border-radius;
+  border-bottom-left-radius: $nexus-border-radius;
+  border-bottom-right-radius: $nexus-border-radius;
+  img {
+    width: $nexus-width;
+    height: $nexus-height;
+  }
+  &::before {
+    width: 8px;
+    height: 8px;
+    border-radius: 9px;
+    margin: -26px 0 0 114px;
+    box-shadow: -88px 1px 0 -3px $background-color;
+  }
+  &::after {
+    height: 85px;
+    width: 3px;
+    background: $primary-color;
+    border: none;
+    margin: -369px 0 0 -14px;
+  }
+  &.outline {
+    padding: $nexus-outer;
+    border-width: $border-width;
+    &::before {
+      box-shadow: -88px 1px 0 -3px $primary-color;
+    }
+  }
+}
