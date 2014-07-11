@@ -11,34 +11,33 @@ Screenshot is build in SCSS/Sass. To compile it, Install Sass first:
 
 ## Usage
 
-1. Include the screenshot.css in your web project
+Include the screenshot.css in your web project
 
-    &lt;link href="/css/screenshot.css" rel="stylesheet"&gt;
+    <link href="/css/screenshot.css" rel="stylesheet">
 
-2. Wrap your screenshot in a ´div.screenshot´
+Wrap your screenshot in a `div.screenshot`
 
-    &lt;div class="screenshot"&gt;
-      &lt;img src="screenshot.png"&gt;
-    &lt;/div&gt;
+    <div class="screenshot">
+      <img src="screenshot.png">
+    </div>
 
-3. Add the device of your choice as a Classname
+Add the device of your choice as a Classname
 
-    &lt;div class="screenshot notebook"&gt;
-      &lt;img src="screenshot.png"&gt;
-    &lt;/div&gt;
-
+    <div class="screenshot notebook">
+     <img src="screenshot.png">
+    </div>
 
 ### Available Devices
 
-- ´iphone´- Apple iPhone 5/5S, Portrait Mode
-- ´ipad´ - Apple iPad Air, Portrait Mode
-- ´nexus´ - Generic Android 4" Smartphone
-- ´notebook´ - Generic Notebook
-- ´browser´ - Generic Webbrowser. Add URL as title-attribute to display it in the address bar
+- `iphone`- Apple iPhone 5/5S, Portrait Mode
+- `ipad` - Apple iPad Air, Portrait Mode
+- `nexus` - Generic Android 4" Smartphone
+- `notebook` - Generic Notebook
+- `browser` - Generic Webbrowser. Add URL as title-attribute to display it in the address bar
 
 ### Additional Options
 
-- ´outline´ - creates an outlined style instead of a Solid one
+- `outline` - creates an outlined style instead of a Solid one
 
 ## Examples
 
