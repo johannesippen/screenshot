@@ -8,6 +8,11 @@ Screenshot is build in SCSS/Sass. To compile it, Install Sass first:
 
     gem install sass
     sass screenshot.scss screenshot.css
+    
+Alternatively, use Grunt to create a dev & compressed file on the fly:
+
+    npm install
+    grunt
 
 ## Usage
 
